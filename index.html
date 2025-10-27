@@ -1,91 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Desenvolvimento de um Sistema de Gestão Digital para Coleta de Lixo em Comunidades</title>
-    <style type="text/css">
-        .img_center 
-        {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width:15%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvimento de um Sistema de Gestão Digital para Coleta de Lixo em Comunidades</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f6fa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 900px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .img_center {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 120px;
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #002855;
+      margin-top: 5px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #004aad;
+    }
+
+    .box {
+      background-color: #f9fafb;
+      border-left: 4px solid #004aad;
+      margin-top: 25px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .box:hover {
+      background-color: #f0f7ff;
+      border-left: 4px solid #ffcc00;
+    }
+
+    .box p {
+      margin: 6px 0;
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    .dados {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 5px;
+    }
+
+    .dados p {
+      background: #eaf2ff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border-left: 4px solid #004aad;
+      font-weight: 500;
+    }
+
+    strong {
+      color: #004aad;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <img class="img_center" src="c:\Users\Guilherme\Pictures\Camera Roll\iml.png" alt="">
-    <h2>Instituto Médio Comerial de Luanda </h2>
+  <div class="container">
+    <img class="img_center" src="c:\Users\Guilherme\Pictures\Camera Roll\iml.png" alt="Logotipo da Escola">
+    <h2>Instituto Médio Comercial de Luanda</h2>
     <h3>Formulário de Proposta de Tema – P.A.P</h3>
 
-  <div class="box dados">
-    <p><strong>Curso:</strong> Informática de Gestão</p>
-    <p><strong>Turma:</strong> ATI13</p>
-    <p><strong>Sala:</strong> 19</p>
-    <p><strong>Turno:</strong> Noite</p>
-    <p><strong>Grupo Nº:</strong> 3</p>
-    <p><strong>Ano Lectivo:</strong> 2025</p>
-  </div>
+    <div class="box dados">
+      <p><strong>Curso:</strong> Informática de Gestão</p>
+      <p><strong>Turma:</strong> ATI13</p>
+      <p><strong>Sala:</strong> 19</p>
+      <p><strong>Turno:</strong> Noite</p>
+      <p><strong>Grupo Nº:</strong> 3</p>
+      <p><strong>Ano Lectivo:</strong> 2025</p>
+    </div>
 
-  <div class="box">
-    <p><strong>Título do Tema:</strong> Desenvolvimento de um Sistema de Gestão Digital para Coleta de Lixo em Comunidades</p>
-  </div>
+    <div class="box">
+      <p><strong>Título do Tema:</strong> Desenvolvimento de um Sistema de Gestão Digital para Coleta de Lixo em Comunidades</p>
+    </div>
 
-  <div class="box">
-    <h3>Objeto de Estudo</h3>
-    <p>O presente trabalho propõe o desenvolvimento de um sistema digital que visa melhorar a comunicação entre moradores e empresas de limpeza urbana, permitindo o reporte e o acompanhamento da coleta de lixo em comunidades de Luanda. O sistema facilitará o envio de informações sobre contentores cheios, rotas de recolha e notificações de coleta, tornando o processo mais eficiente e transparente.</p>
-  </div>
+    <div class="box">
+      <h3>Objeto de Estudo</h3>
+      <p>O presente trabalho propõe o desenvolvimento de um sistema digital que visa melhorar a comunicação entre moradores e empresas de limpeza urbana, permitindo o reporte e o acompanhamento da coleta de lixo em comunidades de Luanda. O sistema facilitará o envio de informações sobre contentores cheios, rotas de recolha e notificações de coleta, tornando o processo mais eficiente e transparente.</p>
+    </div>
 
-  <div class="box">
-    <h3>Problema Identificado</h3>
-    <p>Em várias comunidades de Luanda, os contentores permanecem cheios durante longos períodos devido à falta de comunicação e monitoramento entre os moradores e as empresas de limpeza. Atualmente, a comunicação é feita por rádio ou WhatsApp, o que causa atrasos e falta de registro formal das ocorrências. Isso resulta em lixo acumulado, maus odores e riscos à saúde pública.</p>
-  </div>
+    <div class="box">
+      <h3>Problema Identificado</h3>
+      <p>Em várias comunidades de Luanda, os contentores permanecem cheios durante longos períodos devido à falta de comunicação e monitoramento entre os moradores e as empresas de limpeza. Atualmente, a comunicação é feita por rádio ou WhatsApp, o que causa atrasos e falta de registro formal das ocorrências. Isso resulta em lixo acumulado, maus odores e riscos à saúde pública.</p>
+    </div>
 
-  <div class="box">
-    <h3>Objetivo Geral</h3>
-    <p>Desenvolver um sistema de gestão comunitária para coleta de lixo, que facilite o reporte, acompanhamento e controle das operações de recolha, promovendo uma gestão mais eficiente e participativa.</p>
-  </div>
-     <div class="box">
-    <h3>Objetivo Especifico</h3>
-    <p>• Estudar o atual processo de coleta de lixo nas comunidades e identificar falhas.</p>
-<p> • Desenvolver uma interface simples para moradores reportarem contentores cheios com foto e
- localização.</p>
-<p> • Criar um painel administrativo para gestão das notificações e rotas.</p>
-<p> • Implementar o sistema de forma acessível e funcional em dispositivos móveis.</p>
-<p> • Avaliar o impacto da solução na eficiência da coleta e na comunicação comunitária.</p>
-  </div>
-      <div class="box">
-    <h3>Tecnologias Utilizadas</h3>
-    <p> HTML5, CSS3, JavaScript, PHP, MySQL, Leaflet (mapa interativo) e Geolocalização API.</p>
-  </div>
-     <div class="box">
-    <h3>Grau de Inovação Esperado</h3>
-    <p>O sistema propõe uma solução inovadora e prática para comunidades angolanas, permitindo que
- os moradores participem ativamente do processo de gestão de resíduos. Diferente dos métodos
- atuais, que dependem de comunicação manual, o sistema cria um canal digital direto e acessível,
- contribuindo para reduzir a superlotação dos contentores e o acúmulo de lixo nas ruas.</p>
-  </div>
-        <div class="box">
-    <h3>Estudo de Caso</h3>
-    <p> O estudo de caso será realizado com base no funcionamento atual da Elisal, responsável pela
- limpeza urbana de Luanda, considerando o processo manual de comunicação por rádio e
-WhatsApp entre motoristas e supervisores, e a limitação de cobertura das zonas até o Futungo. O
- sistema proposto buscará suprir as falhas identificadas nesse processo, automatizando a
- comunicação e o monitoramento.</p>
-          <div class="box">
-    <h3>Estudo Comparado</h3>
-    <p>Foram analisados sistemas internacionais como SmartWaste (Portugal) e Enevo (Brasil), que
- usam sensores IoT para monitorar contentores, exigindo alto investimento. O sistema proposto
- diferencia-se por oferecer uma solução digital participativa e de baixo custo, onde os próprios
- moradores reportam o estado dos contentores através do aplicativo, permitindo às empresas
- planejar rotas com base em dados reais.</p>
-     <div class="box">
-    <h3>Declaração do Grupo</h3>
-    <p> Declaramos que o tema acima proposto é de autoria do Grupo nº 3, turma ATI13, e que se
- encontra em conformidade com as normas institucionais para o desenvolvimento da P.A.P.</p>
-                    
+    <div class="box">
+      <h3>Objetivo Geral</h3>
+      <p>Desenvolver um sistema de gestão comunitária para coleta de lixo, que facilite o reporte, acompanhamento e controle das operações de recolha, promovendo uma gestão mais eficiente e participativa.</p>
+    </div>
+
+    <div class="box">
+      <h3>Objetivos Específicos</h3>
+      <p>• Estudar o atual processo de coleta de lixo nas comunidades e identificar falhas.</p>
+      <p>• Desenvolver uma interface simples para moradores reportarem contentores cheios com foto e localização.</p>
+      <p>• Criar um painel administrativo para gestão das notificações e rotas.</p>
+      <p>• Implementar o sistema de forma acessível e funcional em dispositivos móveis.</p>
+      <p>• Avaliar o impacto da solução na eficiência da coleta e na comunicação comunitária.</p>
+    </div>
+
+    <div class="box">
+      <h3>Tecnologias Utilizadas</h3>
+      <p>HTML5, CSS3, JavaScript, PHP, MySQL, Leaflet (mapa interativo) e Geolocalização API.</p>
+    </div>
+
+    <div class="box">
+      <h3>Grau de Inovação Esperado</h3>
+      <p>O sistema propõe uma solução inovadora e prática para comunidades angolanas, permitindo que os moradores participem ativamente do processo de gestão de resíduos. Diferente dos métodos atuais, que dependem de comunicação manual, o sistema cria um canal digital direto e acessível, contribuindo para reduzir a superlotação dos contentores e o acúmulo de lixo nas ruas.</p>
+    </div>
+
+    <div class="box">
+      <h3>Estudo de Caso</h3>
+      <p>O estudo de caso será realizado com base no funcionamento atual da Elisal, responsável pela limpeza urbana de Luanda, considerando o processo manual de comunicação por rádio e WhatsApp entre motoristas e supervisores, e a limitação de cobertura das zonas até o Futungo. O sistema proposto buscará suprir as falhas identificadas nesse processo, automatizando a comunicação e o monitoramento.</p>
+    </div>
+
+    <div class="box">
+      <h3>Estudo Comparado</h3>
+      <p>Foram analisados sistemas internacionais como SmartWaste (Portugal) e Enevo (Brasil), que usam sensores IoT para monitorar contentores, exigindo alto investimento. O sistema proposto diferencia-se por oferecer uma solução digital participativa e de baixo custo, onde os próprios moradores reportam o estado dos contentores através do aplicativo, permitindo às empresas planejar rotas com base em dados reais.</p>
+    </div>
+
+    <div class="box">
+      <h3>Declaração do Grupo</h3>
+      <p>Declaramos que o tema acima proposto é de autoria do Grupo nº 3, turma ATI13, e que se encontra em conformidade com as normas institucionais para o desenvolvimento da P.A.P.</p>
+    </div>
+
+    <footer>
+      © 2025 Instituto Médio Comercial de Luanda.
+    </footer>
   </div>
 </body>
 </html>
